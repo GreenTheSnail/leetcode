@@ -4,12 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] arr = {3,3};
-
-        int[] luls = solution.twoSum(arr, 6);
-
-       for(int lul: luls){
-           System.out.println(lul);
+        int y = 1563847412;
+        int x = solution.reverse(y);
+        System.out.println(x);
        }
     }
-}
+
