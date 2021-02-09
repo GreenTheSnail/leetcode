@@ -4,8 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int lul = 1000021;
-        boolean x =solution.isPalindrome(lul);
+        int[] nums = {1};
+        int target = 2;
+        int x =solution.searchInsert(nums, target);
         System.out.println(x);
     }
     }

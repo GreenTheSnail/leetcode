@@ -1,21 +1,21 @@
 package com.green;
 
 public class Solution {
-    public boolean isPalindrome(int x) {
-          boolean bol = false;
-          String[] nums = Integer.toString(x).split("");
-          if(nums.length == 1){
-              bol = true;
-          }else {
-              for (int i = 0; i < (nums.length / 2); i++) {
-                  if (nums[i].equals(nums[nums.length - i - 1])) {
-                      bol = true;
-                  } else {
-                      bol = false;
-                      break;
-                  }
-              }
-          }
-        return bol;
+    public int searchInsert(int[] nums, int target) {
+        int x = -1;
+        for (int i=0; i<nums.length; i++){
+            if(nums[i]==target){
+                x=i;
+            }
+        }
+        if(x==-1){
+            x=0;
+            for (int i=0; i<nums.length; i++){
+                if(nums[i]<target){
+                    x = i+1;
+                }
+            }
+        }
+        return x;
     }
 }
