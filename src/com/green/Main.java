@@ -4,9 +4,11 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        String s = " ";
-        int x =solution.lengthOfLastWord(s);
-        System.out.println(x);
+        int[] y = {1,9,9};
+        int x[] =solution.plusOne(y);
+        for (int xz : x){
+            System.out.println(xz);
+        }
     }
     }
 
