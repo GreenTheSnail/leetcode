@@ -1,21 +1,12 @@
 package com.green;
 
 public class Solution {
-    public int searchInsert(int[] nums, int target) {
-        int x = -1;
-        for (int i=0; i<nums.length; i++){
-            if(nums[i]==target){
-                x=i;
-            }
-        }
-        if(x==-1){
-            x=0;
-            for (int i=0; i<nums.length; i++){
-                if(nums[i]<target){
-                    x = i+1;
-                }
-            }
-        }
+    public int lengthOfLastWord(String s) {
+        int x = 0;
+    String[] words = s.split(" ");
+    if(words.length != 0){
+    x = words[words.length-1].length();
+    }
         return x;
     }
 }
