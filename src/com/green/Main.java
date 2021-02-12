@@ -4,11 +4,9 @@ public class Main {
 
     public static void main(String[] args) {
         Solution solution = new Solution();
-        int[] y = {1,9,9};
-        int x[] =solution.plusOne(y);
-        for (int xz : x){
-            System.out.println(xz);
-        }
+        int[] y = {7,1,5,3,6,4};
+        int x =solution.maxProfit(y);
+        System.out.println(x);
     }
     }
 
